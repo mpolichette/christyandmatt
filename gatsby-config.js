@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Christy and Matt's Wedding!`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Christy and Matt`,
+    description: `Announcement and information about Matt and Christy's wedding. `,
+    author: `Matt Polichette`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
