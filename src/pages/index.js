@@ -4,12 +4,40 @@ import Layout from "../components/layout"
 import Hero from "../components/Hero"
 import SEO from "../components/seo"
 
-const Body = styled.section`
+const Body = styled.article`
   margin: 1rem auto 0;
   padding: 2rem 3rem;
   width: 80vw;
   max-width: 960px;
-  background: white;
+  background: #fffff8;
+  border-radius: 4px;
+`
+
+const TheDate = styled.div`
+  font-size: 18px;
+`
+
+const Message = styled.div`
+  padding: 24px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before,
+  &:after {
+    content: "🎉";
+    font-size: 28px;
+    margin: 8px;
+  }
+`
+
+const SaveTheDate = styled.section`
+  text-align: center;
+`
+
+const MoreToCome = styled.div`
+  font-size: 18px;
+  font-weight: bold;
 `
 
 const IndexPage = () => (
@@ -17,61 +45,21 @@ const IndexPage = () => (
     <SEO title="❤️" />
     <Hero />
     <Body>
-      <h1 id="OurStory">Us</h1>
-      <h2>Christine Lasher</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error ea
-        vel? Tempore fuga voluptates excepturi officiis quidem esse, voluptatum
-        quasi cum, tenetur at, accusamus recusandae distinctio neque cumque nam
-        quos itaque quis. Voluptas error consectetur sit doloribus nam quam
-        architecto aspernatur ipsum consequuntur nesciunt dignissimos maiores
-        eos itaque repudiandae totam dolorum recusandae, quia minima impedit
-        omnis laudantium, ullam facere accusamus! Sapiente magnam perspiciatis
-        illo beatae pariatur. Fugit sunt et laudantium velit exercitationem
-        facilis reiciendis aliquam blanditiis sequi veniam! Aperiam, porro autem
-        amet veniam nesciunt necessitatibus officiis distinctio eum saepe,
-        dolorum eaque unde vel in ratione possimus hic labore corporis!
-      </p>
-      <h2>Matt Polichette</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error ea
-        vel? Tempore fuga voluptates excepturi officiis quidem esse, voluptatum
-        quasi cum, tenetur at, accusamus recusandae distinctio neque cumque nam
-        quos itaque quis. Voluptas error consectetur sit doloribus nam quam
-        architecto aspernatur ipsum consequuntur nesciunt dignissimos maiores
-        eos itaque repudiandae totam dolorum recusandae, quia minima impedit
-        omnis laudantium, ullam facere accusamus! Sapiente magnam perspiciatis
-        illo beatae pariatur. Fugit sunt et laudantium velit exercitationem
-        facilis reiciendis aliquam blanditiis sequi veniam! Aperiam, porro autem
-        amet veniam nesciunt necessitatibus officiis distinctio eum saepe,
-        dolorum eaque unde vel in ratione possimus hic labore corporis!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error ea
-        vel? Tempore fuga voluptates excepturi officiis quidem esse, voluptatum
-        quasi cum, tenetur at, accusamus recusandae distinctio neque cumque nam
-        quos itaque quis. Voluptas error consectetur sit doloribus nam quam
-        architecto aspernatur ipsum consequuntur nesciunt dignissimos maiores
-        eos itaque repudiandae totam dolorum recusandae, quia minima impedit
-        omnis laudantium, ullam facere accusamus! Sapiente magnam perspiciatis
-        illo beatae pariatur. Fugit sunt et laudantium velit exercitationem
-        facilis reiciendis aliquam blanditiis sequi veniam! Aperiam, porro autem
-        amet veniam nesciunt necessitatibus officiis distinctio eum saepe,
-        dolorum eaque unde vel in ratione possimus hic labore corporis!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error ea
-        vel? Tempore fuga voluptates excepturi officiis quidem esse, voluptatum
-        quasi cum, tenetur at, accusamus recusandae distinctio neque cumque nam
-        quos itaque quis. Voluptas error consectetur sit doloribus nam quam
-        architecto aspernatur ipsum consequuntur nesciunt dignissimos maiores
-        eos itaque repudiandae totam dolorum recusandae, quia minima impedit
-        omnis laudantium, ullam facere accusamus! Sapiente magnam perspiciatis
-        illo beatae pariatur. Fugit sunt et laudantium velit exercitationem
-        facilis reiciendis aliquam blanditiis sequi veniam! Aperiam, porro autem
-        amet veniam nesciunt necessitatibus officiis distinctio eum saepe,
-        dolorum eaque unde vel in ratione possimus hic labore corporis!
-      </p>
+      <SaveTheDate>
+        <h2>Save the date!</h2>
+        <TheDate>
+          June 27th 2020 <br /> Alta, Utah
+        </TheDate>
+        <Message>
+          <span>We are so exited to get married!</span>
+        </Message>
+        <MoreToCome>
+          We will be adding more info here, check back again soon!
+        </MoreToCome>
+      </SaveTheDate>
+      {/* <h1 id="OurStory">Us</h1> */}
+      {/* <h2>Christine Lasher</h2> */}
+      {/* <h2>Matt Polichette</h2> */}
     </Body>
   </Layout>
 )

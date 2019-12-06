@@ -8,33 +8,41 @@ const Root = styled.header`
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0 20px;
   background: transparent;
   color: #4b5840;
   z-index: 5;
 `
 
 const Content = styled.div`
-  height: 50px;
   margin: 0 auto;
-  padding: 0 3rem;
-  max-width: 960px;
+  padding: 20px 0;
 
   display: flex;
   align-items: center;
 `
 
 const HomeLink = styled(Link)`
-  /* color: #3b3b3b; */
+  padding: 0.5rem 1rem;
   color: #4b5840;
   text-decoration: none;
   h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 `
 
-const Nav = styled.ul`
+const Nav = styled.nav`
   margin-left: auto;
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
 `
 
 const Links = styled.ul`
@@ -45,15 +53,16 @@ const Links = styled.ul`
 `
 
 const Route = styled(Link)`
-  /* color: #3b3b3b; */
   color: #4b5840;
   text-decoration: none;
 `
 
 const RSVPLink = styled(Link)`
-  /* color: #3b3b3b; */
+  padding: 4px 12px;
   color: #4b5840;
   text-decoration: none;
+  border: 1px solid #4b5840;
+  border-radius: 3px;
 `
 
 const Header = ({ siteTitle }) => (
@@ -62,7 +71,7 @@ const Header = ({ siteTitle }) => (
       <HomeLink to="/">
         <h1>{siteTitle}</h1>
       </HomeLink>
-      <Nav>
+      {/* <Nav>
         <Links>
           <li>
             <Route to="#OurStory">Our Story</Route>
@@ -74,7 +83,7 @@ const Header = ({ siteTitle }) => (
             <RSVPLink to="/rsvp">RSVP</RSVPLink>
           </li>
         </Links>
-      </Nav>
+      </Nav> */}
     </Content>
   </Root>
 )

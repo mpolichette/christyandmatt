@@ -32,23 +32,34 @@ const SaveTheDate = styled.div`
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
 `
 
-const TheDate = styled.h1`
-  font-size: 40px;
+const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+`
+
+const TheDate = styled.h2`
+  font-size: 32px;
   margin: 0;
-  color: #fdfdfd;
+  color: #e5e5d8;
+`
+const Location = styled.h2`
+  font-size: 16px;
+  margin: 0;
+  color: #e5e5d8;
 `
 
 const RSVPButton = styled.a`
-  padding: 0 8px;
-  font-size: 32px;
-  color: #fdfdfd;
+  padding: 2px 12px;
+  font-size: 24px;
+  color: #e5e5d8;
 
-  border: 2px solid #fdfdfd;
+  border: 2px solid #e5e5d8;
   border-radius: 3px;
 
   text-decoration: none;
   &:visited {
-    color: #fdfdfd;
+    color: #e5e5d8;
   }
 `
 
@@ -74,16 +85,15 @@ const Hero = () => {
     <Root>
       <Img
         fluid={data.file.childImageSharp.fluid}
-        style={{
-          height: "100%",
-          // maxHeight: "70vh",
-          // minHeight: "500px",
-        }}
+        style={{ height: "100%" }}
         imgStyle={{ objectPosition: "65% 70%" }}
       />
       <SaveTheDate>
-        <TheDate>June 27th, 2020</TheDate>
-        <RSVPButton href="/rsvp">RSVP</RSVPButton>
+        <Info>
+          <TheDate>June 27th, 2020</TheDate>
+          <Location>Alta, Utah</Location>
+        </Info>
+        {/* <RSVPButton href="/rsvp">RSVP</RSVPButton> */}
       </SaveTheDate>
     </Root>
   )
