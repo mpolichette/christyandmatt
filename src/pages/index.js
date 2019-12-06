@@ -42,7 +42,7 @@ const MoreToCome = styled.div`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="❤️" />
+    <SEO />
     <Hero />
     <Body>
       <SaveTheDate>
