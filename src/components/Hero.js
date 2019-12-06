@@ -86,7 +86,7 @@ const Hero = () => {
       <Img
         fluid={data.file.childImageSharp.fluid}
         style={{ height: "100%" }}
-        imgStyle={{ objectPosition: "65% 70%" }}
+        imgStyle={{ objectPosition: "55% 70%" }}
       />
       <SaveTheDate>
         <Info>
