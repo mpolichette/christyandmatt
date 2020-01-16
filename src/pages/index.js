@@ -54,7 +54,7 @@ const IndexPage = () => (
           <span>We are so exited to get married!</span>
         </Message>
         <MoreToCome>
-          We will be adding more info here, check back again soon!
+          We will be adding more info here. Check back again soon!
         </MoreToCome>
       </SaveTheDate>
       {/* <h1 id="OurStory">Us</h1> */}
